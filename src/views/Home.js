@@ -8,14 +8,16 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 
 /** Component */
-import GridContainer from "../components/GridContainer.js";
-import CardIcon from "../components/CardIcon.js";
-import CardHeader from "../components/CardHeader.js";
-import Card from "../components/Card.js";
-import GridItem from "../components/GridItem.js";
+import GridContainer from "../components/cards/GridContainer.js";
+import CardIcon from "../components/cards/CardIcon.js";
+import CardHeader from "../components/cards/CardHeader.js";
+import Card from "../components/cards/Card.js";
+import GridItem from "../components/cards/GridItem.js";
+import FolderList from "./MessageFolder.js";
 
 /** Assets */
 import styles from "../assets/styles/views/dashboardStyle.js";
+
 
 const useStyles = makeStyles(styles);
 
@@ -76,6 +78,7 @@ export default function Home() {
                         </CardHeader>
                     </Card>
                 </GridItem>
+                <FolderList />
             </GridContainer>
         </div>
     );
